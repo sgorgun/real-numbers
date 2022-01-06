@@ -1,4 +1,6 @@
-﻿#pragma warning disable CA1707
+﻿global using NUnit.Framework;
+
+#pragma warning disable CA1707
 
 namespace Literals.Tests
 {
