@@ -47,7 +47,7 @@ _-0.000000000000000000000000000000000000000123_ and _-1.23E-40_ are the same num
 
 ![Scientific Notation](images/scientific-notation.png)
 
-After completing [ReturnFloat38](RealNumbers/Floats.cs#L49) navigate to [ReturnFloat38_ReturnsFloat](RealNumbers.Tests/FloatsTests.cs#L85) unit test and take a look at the float literal that unit tests uses for comparing with the method result.
+After completing [ReturnFloat38](RealNumbers/Floats.cs#L49) navigate to [ReturnFloat38_ReturnsFloat](RealNumbers.Tests/FloatsTests.cs#L87) unit test and take a look at the float literal that unit tests uses for comparing with the method result.
 
 _1.04829482E+27_ is a scientific notation for _1,048,294,820,000,000,000,000,000,000_ number. This number does't equal to what you return from your _ReturnLongInteger38_ method. This happens because of the limitations of data format the program uses to store a floating-point number. The value is rounded automatically because the number is too huge.
 
@@ -127,7 +127,7 @@ After completing [ReturnDecimal54](RealNumbers/Decimals.cs#L23) navigate to [Ret
 
 After completing [ReturnDecimal55](RealNumbers/Decimals.cs#L29) navigate to [ReturnDecimal55_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L55) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ and _ReturnDouble45_ methods.
 
-Compare the result of sum expression in [ReturnDecimal56](RealNumbers/Decimals.cs#L35) with _double_ literal in [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DecimalTests.cs#L65).
+Compare the result of sum expression in [ReturnDecimal56](RealNumbers/Decimals.cs#L35) with _double_ literal in [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DecimalsTests.cs#L65).
 
 
 ### Accuracy
