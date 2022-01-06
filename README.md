@@ -19,7 +19,7 @@ Read [Floating-point numeric types](https://docs.microsoft.com/en-us/dotnet/csha
 
 ### _float_ data type
 
-Open [Floats.cs](Literals/Floats.cs) file, and implement all methods using the information from the table below.
+Open [Floats.cs](RealNumbers/Floats.cs) file, and implement all methods using the information from the table below.
 
 | Method Name    | Number                                                          |
 |----------------|-----------------------------------------------------------------|
@@ -47,13 +47,13 @@ _-0.000000000000000000000000000000000000000123_ and _-1.23E-40_ are the same num
 
 ![Scientific Notation](images/scientific-notation.png)
 
-After completing [ReturnFloat38](Literals/Floats.cs#L49) navigate to [ReturnFloat38_ReturnsFloat](Literals.Tests/FloatsTests.cs#L85) unit test and take a look at the float literal that unit tests uses for comparing with the method result.
+After completing [ReturnFloat38](RealNumbers/Floats.cs#L49) navigate to [ReturnFloat38_ReturnsFloat](RealNumbers.Tests/FloatsTests.cs#L85) unit test and take a look at the float literal that unit tests uses for comparing with the method result.
 
 _1.04829482E+27_ is a scientific notation for _1,048,294,820,000,000,000,000,000,000_ number. This number does't equal to what you return from your _ReturnLongInteger38_ method. This happens because of the limitations of data format the program uses to store a floating-point number. The value is rounded automatically because the number is too huge.
 
 ![Truncate Float](images/float-truncate-1.png)
 
-The same is true for the number in [ReturnFloat39](Literals/Floats.cs#L55) method.
+The same is true for the number in [ReturnFloat39](RealNumbers/Floats.cs#L55) method.
 
 ![Truncate Float](images/float-truncate-2.png)
 
@@ -70,7 +70,7 @@ The result of the expression wouldn't be equal to _0.7_:
 
 ![Float Accuracy](images/float-accuracy.png)
 
-Replace the expression with the expression result to return the correct value from the [ReturnFloat310](Literals/Floats.cs#L61) method.
+Replace the expression with the expression result to return the correct value from the [ReturnFloat310](RealNumbers/Floats.cs#L61) method.
 
 ```cs
 public static float ReturnFloat310()
@@ -82,7 +82,7 @@ public static float ReturnFloat310()
 
 ### _double_ data type
 
-Open [Doubles.cs](Literals/Doubles.cs) file, and implement all methods using the information from the table below.
+Open [Doubles.cs](RealNumbers/Doubles.cs) file, and implement all methods using the information from the table below.
 
 | Method Name    | Number                                                          |
 |----------------|-----------------------------------------------------------------|
@@ -93,15 +93,15 @@ Open [Doubles.cs](Literals/Doubles.cs) file, and implement all methods using the
 | ReturnDouble45 | -30,492,996,837,502,378,502,387,459,850,243.942692284652825     |
 | ReturnDouble46 | 0.6 + 0.1                                                       |
 
-After completing [ReturnDouble44](Literals/Doubles.cs#L23) navigate to [ReturnDouble44_ReturnsDouble](Literals.Tests/DoublesTests.cs#L45) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result.  Compare the method result with the result of _ReturnFloat38_ method.
+After completing [ReturnDouble44](RealNumbers/Doubles.cs#L23) navigate to [ReturnDouble44_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L45) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result.  Compare the method result with the result of _ReturnFloat38_ method.
 
 ![Truncate Double](images/double-truncate-1.png)
 
 _1.0482948294385491E+27_ is a scientific notation for _1,048,294,829,438,549,100,000,000,000.0_ number. _double_ data type has higher precision, but the number is still truncated.
 
-After completing [ReturnDouble45](Literals/Doubles.cs#L29) navigate to [ReturnDouble45_ReturnsDouble](Literals.Tests/DoublesTests.cs#L55) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ method.
+After completing [ReturnDouble45](RealNumbers/Doubles.cs#L29) navigate to [ReturnDouble45_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L55) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ method.
 
-Compare the result of sum expression in [ReturnDouble46](Literals/Doubles.cs#L23) with _double_ literal in [ReturnDouble46_ReturnsDouble](Literals.Tests/DoublesTests.cs#L65):
+Compare the result of sum expression in [ReturnDouble46](RealNumbers/Doubles.cs#L23) with _double_ literal in [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L65):
 
 ![Double Accuracy](images/double-accuracy.png)
 
@@ -110,7 +110,7 @@ _double_ data type is much more accurate than _float_, therefore the expression 
 
 ### _decimal_ data type
 
-Open [Decimals.cs](Literals/Decimals.cs) file, and implement all methods using the information from the table below.
+Open [Decimals.cs](RealNumbers/Decimals.cs) file, and implement all methods using the information from the table below.
 
 | Method Name     | Number                                                  |
 |-----------------|---------------------------------------------------------|
@@ -121,13 +121,13 @@ Open [Decimals.cs](Literals/Decimals.cs) file, and implement all methods using t
 | ReturnDecimal55 | -30,492,996,837,502,378,502,387,459,850.942692284652825 |
 | ReturnDecimal56 | 0.6 + 0.1                                               |
 
-After completing [ReturnDecimal54](Literals/Decimals.cs#L23) navigate to [ReturnDecimal54_ReturnsDecimal](Literals.Tests/DecimalsTests.cs#L45) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat38_ and _ReturnDouble44_ methods.
+After completing [ReturnDecimal54](RealNumbers/Decimals.cs#L23) navigate to [ReturnDecimal54_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L45) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat38_ and _ReturnDouble44_ methods.
 
 ![Truncate Decimal](images/decimal-truncate-1.png)
 
-After completing [ReturnDecimal55](Literals/Decimals.cs#L29) navigate to [ReturnDecimal55_ReturnsDecimal](Literals.Tests/DecimalsTests.cs#L55) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ and _ReturnDouble45_ methods.
+After completing [ReturnDecimal55](RealNumbers/Decimals.cs#L29) navigate to [ReturnDecimal55_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L55) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ and _ReturnDouble45_ methods.
 
-Compare the result of sum expression in [ReturnDecimal56](Literals/Decimals.cs#L35) with _double_ literal in [ReturnDouble46_ReturnsDouble](Literals.Tests/DecimalTests.cs#L65).
+Compare the result of sum expression in [ReturnDecimal56](RealNumbers/Decimals.cs#L35) with _double_ literal in [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DecimalTests.cs#L65).
 
 
 ### Accuracy
