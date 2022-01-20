@@ -9,7 +9,7 @@ The task requires .NET 6 SDK installed.
 
 ## Task Description
 
-The task has twenty-two sub-tasks. Each sub-task is a small coding excercise.
+The task has twenty-two sub-tasks. Each sub-task is a small coding exercise.
 
 
 ### Real Literals
