@@ -14,12 +14,12 @@ The task has twenty-two sub-tasks. Each sub-task is a small coding exercise.
 
 ### Real Literals
 
-Read [Floating-point numeric types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types) article.
+Read the [Floating-point numeric types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types) article.
 
 
 ### _float_ data type
 
-Open [Floats.cs](RealNumbers/Floats.cs) file, and implement all methods using the information from the table below.
+Open the [Floats.cs](RealNumbers/Floats.cs) file, and implement all methods using the information from the table below.
 
 | Method Name    | Number                                                          |
 |----------------|-----------------------------------------------------------------|
@@ -34,7 +34,7 @@ Open [Floats.cs](RealNumbers/Floats.cs) file, and implement all methods using th
 | ReturnFloat39  | -30,492,996,837,502,378,502,387,459,850,243.942692284652825     |
 | ReturnFloat310 | 0.6 + 0.1                                                       |
 
-Use the **f** or **F** suffix for literals of _float_ type:
+Use the **f** or the **F** suffix for literals of _float_ type:
 
 ```cs
 public static float ReturnFloat31()
@@ -43,21 +43,21 @@ public static float ReturnFloat31()
 }
 ```
 
-_-0.000000000000000000000000000000000000000123_ and _-1.23E-40_ are the same numbers, but the last number is in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation).
+_-0.000000000000000000000000000000000000000123_ and _-1.23E-40_ are the same numbers, but the last number is written in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation).
 
 ![Scientific Notation](images/scientific-notation.png)
 
-After completing [ReturnFloat38](RealNumbers/Floats.cs#L49) navigate to [ReturnFloat38_ReturnsFloat](RealNumbers.Tests/FloatsTests.cs#L87) unit test and take a look at the float literal that unit tests uses for comparing with the method result.
+After completing the [ReturnFloat38](RealNumbers/Floats.cs#L49) method navigate to the [ReturnFloat38_ReturnsFloat](RealNumbers.Tests/FloatsTests.cs#L87) unit test and take a look at the float literal that unit tests uses for comparing with the method result.
 
-_1.04829482E+27_ is a scientific notation for _1,048,294,820,000,000,000,000,000,000_ number. This number does't equal to what you return from your _ReturnLongInteger38_ method. This happens because of the limitations of data format the program uses to store a floating-point number. The value is rounded automatically because the number is too huge.
+_1.04829482E+27_ is a scientific notation for the _1,048,294,820,000,000,000,000,000,000_ number. This number does't equal to what you return from your _ReturnLongInteger38_ method. This happens because of the limitations of data format the program uses to store a floating-point number. The value is rounded automatically because the number is too huge.
 
 ![Truncate Float](images/float-truncate-1.png)
 
-The same is true for the number in [ReturnFloat39](RealNumbers/Floats.cs#L55) method.
+The same is true for the number in the [ReturnFloat39](RealNumbers/Floats.cs#L55) method.
 
 ![Truncate Float](images/float-truncate-2.png)
 
-Also, floating-point numbers has accuracy issues (see [Accuracy Problems](https://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems)), and floating-point operations cannot precisely represent true arithmetic operations.
+Also, floating-point numbers have accuracy issues (see [Accuracy Problems](https://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems)), and floating-point operations cannot precisely represent true arithmetic operations.
 
 ```cs
 public static float ReturnFloat310()
@@ -66,7 +66,7 @@ public static float ReturnFloat310()
 }
 ```
 
-The result of the expression wouldn't be equal to _0.7_:
+The result of the expression won't be equal to _0.7_:
 
 ![Float Accuracy](images/float-accuracy.png)
 
@@ -82,7 +82,7 @@ public static float ReturnFloat310()
 
 ### _double_ data type
 
-Open [Doubles.cs](RealNumbers/Doubles.cs) file, and implement all methods using the information from the table below.
+Open the [Doubles.cs](RealNumbers/Doubles.cs) file, and implement all methods using the information from the table below.
 
 | Method Name    | Number                                                          |
 |----------------|-----------------------------------------------------------------|
@@ -93,24 +93,24 @@ Open [Doubles.cs](RealNumbers/Doubles.cs) file, and implement all methods using 
 | ReturnDouble45 | -30,492,996,837,502,378,502,387,459,850,243.942692284652825     |
 | ReturnDouble46 | 0.6 + 0.1                                                       |
 
-After completing [ReturnDouble44](RealNumbers/Doubles.cs#L23) navigate to [ReturnDouble44_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L45) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result.  Compare the method result with the result of _ReturnFloat38_ method.
+After completing the [ReturnDouble44](RealNumbers/Doubles.cs#L23) method navigate to the [ReturnDouble44_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L45) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result.  Compare the method result with the result of the _ReturnFloat38_ method.
 
 ![Truncate Double](images/double-truncate-1.png)
 
-_1.0482948294385491E+27_ is a scientific notation for _1,048,294,829,438,549,100,000,000,000.0_ number. _double_ data type has higher precision, but the number is still truncated.
+_1.0482948294385491E+27_ is a scientific notation for the _1,048,294,829,438,549,100,000,000,000.0_ number. The _double_ data type has higher precision, but the number is still truncated.
 
-After completing [ReturnDouble45](RealNumbers/Doubles.cs#L29) navigate to [ReturnDouble45_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L55) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ method.
+After completing the [ReturnDouble45](RealNumbers/Doubles.cs#L29) method navigate to the [ReturnDouble45_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L55) unit test and take a look at the _double_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of the _ReturnFloat39_ method.
 
-Compare the result of sum expression in [ReturnDouble46](RealNumbers/Doubles.cs#L23) with _double_ literal in [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L65):
+Compare the result of the sum expression in the [ReturnDouble46](RealNumbers/Doubles.cs#L23) method with the _double_ literal in the [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DoublesTests.cs#L65) unit test:
 
 ![Double Accuracy](images/double-accuracy.png)
 
-_double_ data type is much more accurate than _float_, therefore the expression result is equals to _0.7_.
+The _double_ data type is much more accurate than _float_, therefore the expression result equals to _0.7_.
 
 
 ### _decimal_ data type
 
-Open [Decimals.cs](RealNumbers/Decimals.cs) file, and implement all methods using the information from the table below.
+Open the [Decimals.cs](RealNumbers/Decimals.cs) file, and implement all methods using the information from the table below.
 
 | Method Name     | Number                                                  |
 |-----------------|---------------------------------------------------------|
@@ -121,18 +121,18 @@ Open [Decimals.cs](RealNumbers/Decimals.cs) file, and implement all methods usin
 | ReturnDecimal55 | -30,492,996,837,502,378,502,387,459,850.942692284652825 |
 | ReturnDecimal56 | 0.6 + 0.1                                               |
 
-After completing [ReturnDecimal54](RealNumbers/Decimals.cs#L23) navigate to [ReturnDecimal54_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L45) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat38_ and _ReturnDouble44_ methods.
+After completing the [ReturnDecimal54](RealNumbers/Decimals.cs#L23) method navigate to the [ReturnDecimal54_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L45) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of the _ReturnFloat38_ and the _ReturnDouble44_ methods.
 
 ![Truncate Decimal](images/decimal-truncate-1.png)
 
-After completing [ReturnDecimal55](RealNumbers/Decimals.cs#L29) navigate to [ReturnDecimal55_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L55) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of _ReturnFloat39_ and _ReturnDouble45_ methods.
+After completing the [ReturnDecimal55](RealNumbers/Decimals.cs#L29) method navigate to the [ReturnDecimal55_ReturnsDecimal](RealNumbers.Tests/DecimalsTests.cs#L55) unit test and take a look at the _decimal_ literal that unit tests uses for comparing with the method result. Compare the method result with the result of the _ReturnFloat39_ and the _ReturnDouble45_ methods.
 
-Compare the result of sum expression in [ReturnDecimal56](RealNumbers/Decimals.cs#L35) with _double_ literal in [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DecimalsTests.cs#L65).
+Compare the result of the sum expression in the [ReturnDecimal56](RealNumbers/Decimals.cs#L35) method with the _double_ literal in the [ReturnDouble46_ReturnsDouble](RealNumbers.Tests/DecimalsTests.cs#L65) unit test.
 
 
 ### Accuracy
 
-Use [Immediate window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/immediate-window) to calculate expressions for data types from the table below.
+Use the [Immediate window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/immediate-window) to calculate expressions for the data types from the table below.
 
 | Expression   | float result | double result      | decimal result |
 ---------------|--------------|--------------------|----------------|
@@ -151,11 +151,11 @@ Use [Immediate window](https://docs.microsoft.com/en-us/visualstudio/ide/referen
 
 ![Debug Tests](images/convert-to-hex-2.png)
 
-2. Open Immediate window.
+2. Open the Immediate window.
 
 ![Immediate window](images/convert-to-binary-3.png)
 
-3. Put expression to the Immediate window, and press Enter key.
+3. Put an expression to the Immediate window, and press Enter key.
 
 ![Immediate Calculator](images/immediate-calculator.png)
 
