@@ -87,8 +87,8 @@ Open the [Doubles.cs](RealNumbers/Doubles.cs) file, and implement all methods us
 | Method Name    | Number                                                          |
 |----------------|-----------------------------------------------------------------|
 | ReturnDouble41 | 0.0                                                             |
-| ReturnDouble42 | 1.01                                                            |
-| ReturnDouble43 | -0.01                                                           |
+| ReturnDouble42 | 0.0001                                                          |
+| ReturnDouble43 | -10,000.0000000001                                              |
 | ReturnDouble44 | 1,048,294,829,438,549,029,840,452,834.109492298482              |
 | ReturnDouble45 | -30,492,996,837,502,378,502,387,459,850,243.942692284652825     |
 | ReturnDouble46 | 0.6 + 0.1                                                       |
